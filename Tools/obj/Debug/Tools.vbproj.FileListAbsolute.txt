@@ -1,0 +1,12 @@
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\bin\Debug\Tools.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\bin\Debug\Tools.exe
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\bin\Debug\Tools.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\bin\Debug\Tools.xml
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\bin\Debug\Fader Theme.dll
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.Form1.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.vbproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.exe
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.xml
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.Form2.resources

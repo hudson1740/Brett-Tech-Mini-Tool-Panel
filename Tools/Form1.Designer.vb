@@ -22,16 +22,22 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.FaderTheme1 = New Fader_Theme.FaderTheme()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.FaderControlBox1 = New Fader_Theme.FaderControlBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BrowserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FaderTheme1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'FaderTheme1
         '
+        Me.FaderTheme1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.FaderTheme1.Controls.Add(Me.FaderControlBox1)
         Me.FaderTheme1.Controls.Add(Me.Label1)
         Me.FaderTheme1.Controls.Add(Me.Button2)
@@ -77,11 +83,11 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Yellow
+        Me.Label1.Font = New System.Drawing.Font("AR DESTINE", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Lime
         Me.Label1.Location = New System.Drawing.Point(140, 85)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(239, 25)
+        Me.Label1.Size = New System.Drawing.Size(250, 24)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Please Choose An Option"
         '
@@ -97,6 +103,24 @@ Partial Class Form1
         Me.FaderControlBox1.TabIndex = 3
         Me.FaderControlBox1.Text = "FaderControlBox1"
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BrowserToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(117, 48)
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'BrowserToolStripMenuItem
+        '
+        Me.BrowserToolStripMenuItem.Name = "BrowserToolStripMenuItem"
+        Me.BrowserToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BrowserToolStripMenuItem.Text = "Browser"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -110,6 +134,7 @@ Partial Class Form1
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.FaderTheme1.ResumeLayout(False)
         Me.FaderTheme1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -119,4 +144,7 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents FaderControlBox1 As Fader_Theme.FaderControlBox
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents BrowserToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class

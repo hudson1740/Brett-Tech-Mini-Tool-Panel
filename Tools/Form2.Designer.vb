@@ -22,12 +22,19 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.FaderTheme1 = New Fader_Theme.FaderTheme()
         Me.FaderControlBox1 = New Fader_Theme.FaderControlBox()
         Me.FaderVerticalTabControl1 = New Fader_Theme.FaderVerticalTabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.FaderButton1 = New Fader_Theme.FaderButton()
+        Me.FaderButton2 = New Fader_Theme.FaderButton()
+        Me.FaderButton3 = New Fader_Theme.FaderButton()
+        Me.FaderButton4 = New Fader_Theme.FaderButton()
+        Me.FaderButton5 = New Fader_Theme.FaderButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.FaderTheme1.SuspendLayout()
         Me.FaderVerticalTabControl1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
@@ -77,6 +84,11 @@ Partial Class Form2
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.TabPage3.Controls.Add(Me.Label1)
+        Me.TabPage3.Controls.Add(Me.FaderButton5)
+        Me.TabPage3.Controls.Add(Me.FaderButton4)
+        Me.TabPage3.Controls.Add(Me.FaderButton3)
+        Me.TabPage3.Controls.Add(Me.FaderButton2)
         Me.TabPage3.Controls.Add(Me.FaderButton1)
         Me.TabPage3.Location = New System.Drawing.Point(104, 4)
         Me.TabPage3.Name = "TabPage3"
@@ -87,6 +99,7 @@ Partial Class Form2
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.TabPage4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage4.Location = New System.Drawing.Point(104, 4)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(531, 505)
@@ -96,11 +109,65 @@ Partial Class Form2
         'FaderButton1
         '
         Me.FaderButton1.BackColor = System.Drawing.Color.Transparent
+        Me.FaderButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FaderButton1.Location = New System.Drawing.Point(14, 17)
         Me.FaderButton1.Name = "FaderButton1"
-        Me.FaderButton1.Size = New System.Drawing.Size(160, 35)
+        Me.FaderButton1.Size = New System.Drawing.Size(172, 35)
         Me.FaderButton1.TabIndex = 0
         Me.FaderButton1.Text = "Mouse Settings"
+        '
+        'FaderButton2
+        '
+        Me.FaderButton2.BackColor = System.Drawing.Color.Transparent
+        Me.FaderButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.FaderButton2.Location = New System.Drawing.Point(14, 58)
+        Me.FaderButton2.Name = "FaderButton2"
+        Me.FaderButton2.Size = New System.Drawing.Size(172, 35)
+        Me.FaderButton2.TabIndex = 1
+        Me.FaderButton2.Text = "Keyboard Settings"
+        '
+        'FaderButton3
+        '
+        Me.FaderButton3.BackColor = System.Drawing.Color.Transparent
+        Me.FaderButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.FaderButton3.Location = New System.Drawing.Point(14, 99)
+        Me.FaderButton3.Name = "FaderButton3"
+        Me.FaderButton3.Size = New System.Drawing.Size(172, 35)
+        Me.FaderButton3.TabIndex = 2
+        Me.FaderButton3.Text = "Check System Updates"
+        '
+        'FaderButton4
+        '
+        Me.FaderButton4.BackColor = System.Drawing.Color.Transparent
+        Me.FaderButton4.Location = New System.Drawing.Point(14, 140)
+        Me.FaderButton4.Name = "FaderButton4"
+        Me.FaderButton4.Size = New System.Drawing.Size(172, 35)
+        Me.FaderButton4.TabIndex = 3
+        Me.FaderButton4.Text = "Time & Date"
+        '
+        'FaderButton5
+        '
+        Me.FaderButton5.BackColor = System.Drawing.Color.Transparent
+        Me.FaderButton5.Location = New System.Drawing.Point(367, 17)
+        Me.FaderButton5.Name = "FaderButton5"
+        Me.FaderButton5.Size = New System.Drawing.Size(154, 35)
+        Me.FaderButton5.TabIndex = 4
+        Me.FaderButton5.Text = "Google Chrome"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Schoolbook", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(14, 451)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(507, 30)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Welcome To Brett Tech Mini Tool Panel"
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 10
         '
         'Form2
         '
@@ -116,6 +183,7 @@ Partial Class Form2
         Me.FaderTheme1.ResumeLayout(False)
         Me.FaderVerticalTabControl1.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -126,4 +194,10 @@ Partial Class Form2
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents FaderControlBox1 As Fader_Theme.FaderControlBox
     Friend WithEvents FaderButton1 As Fader_Theme.FaderButton
+    Friend WithEvents FaderButton2 As Fader_Theme.FaderButton
+    Friend WithEvents FaderButton3 As Fader_Theme.FaderButton
+    Friend WithEvents FaderButton4 As Fader_Theme.FaderButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents FaderButton5 As Fader_Theme.FaderButton
+    Friend WithEvents Timer1 As Timer
 End Class

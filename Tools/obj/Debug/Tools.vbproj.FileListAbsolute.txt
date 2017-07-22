@@ -10,3 +10,8 @@ c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Deb
 c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.xml
 c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.pdb
 c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.Form2.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.vbprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.Form3.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\bin\Debug\Effectual Theme.dll
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.Browser.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Tools\Tools\obj\Debug\Tools.About.resources
